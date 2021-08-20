@@ -121,7 +121,7 @@ This schedule will be used to keep track of your progress throughout the week an
 ## SWOT Analysis
 
 ### Strengths:
-
+I have good knowledge of . As such, I can better plan for what needs to be done and how long it will take. I also know which labs and excercise I can reference if I get lost along the way.
 ### Weaknesses:
 
 ### Opportunities:
