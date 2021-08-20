@@ -6,21 +6,19 @@
 
 ## Project Description
 
-ChoreBox is an Airtable and React build where the user can keep track of his or her chores.  From the homepage, the user has the ability to view the current chore list, edit, and delete a chore.  The navigation bar will include a link to add a new chore, and another link to learn more about the creator of the website, Eileen Olivera.
+ChoreBox is an Airtable and React build where the user can keep track of his or her chores.  From the homepage, the user has the ability to view the current chore list, edit, and delete a chore.  The navigation bar will include a link to add a new chore, and another link to learn more about the inspiration of the website.
 
 ## Wireframes
 
-The wireframes below display the homepage with the chore list and description for ChoreBox in the desktop and mobile formats. The homepage contains the name of the website, a navigation bar with two clickable links; "Add A Chore", and "About".  When a user clicks on a chore, the homepage displays a container holding its description with the option to edit or delete the chore all together. The "Add a Chore" link route's to a new page within the website that contains an input form followed by the "Add Chore" button.  This will submit the new chore onto the homepage sidebar with the current chores.  The "About" link will have content about why the creator built the app.  The wireframe also contains a footer that will have clickable logos to the creator's GitHub and LinkedIn profiles. 
+The wireframes below display the homepage with the chore list and description for ChoreBox in the desktop and mobile formats. The homepage contains the name of the website, a navigation bar with two clickable links; "Add A Chore", and "About".  When a user clicks on a chore, the homepage displays a container holding its description with the option to edit or delete the chore all together. The "Add a Chore" link route's to a new page within the website that contains an input form followed by the "Add A Chore" button.  This will submit the new chore onto the homepage sidebar with the current chores.  The "About" link will have content about why the creator built the app.  The wireframe also contains a footer that will have clickable logos to the creator's GitHub and LinkedIn profiles. 
 
-<img src = "Assets/Chores WireFrame.png">
+<img src = "client/Assets/Chores WireFrame.png">
 
 ## Component Hierarchy
 
-<img src = "Assets/Component Hierarchy.png">
+<img src = "client/Assets/Component Hierarchy.png">
 
 ## API and Data Sample
-
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
 ```json
 {
@@ -73,19 +71,11 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 #### MVP 
 
-- Be a working, interactive React app, built using create react app.
-- Utilize React Router, installed via NPM.
-- Have at least six separate, rendered components.
-- Implement an organized and understandable React file structure.
-- Use functional and class React components appropriately.
-- Apply Axios to go through data from Airtable, and GET/render that data in components.
-- Implement Axios to POST/create new chore onto Airtable.
-- Use Axios to PUT/update a chore and DELETE a chore to Airtable.
+Be a working, interactive React app, built using create react app.  Have at least six separate, rendered components; App, Chore, Form, NavBar, Sidebar, and About.  The React file structure needs to be organized in an understandable way.  I will ensure all functionality of the React components. Application of Axios needs to take place to obtain data from Airtable, and GET/render that data in components.  I will also use the POST/create Axios request to add a new chore.  The PUT/update Axios request will be implemented for the user to delete a chore.
 
 #### PostMVP
 
-- Include points upon chore completion leading up to weekly allowance amount.
-- Use third party API to generate random motivational quotes on homepage.
+I would like to include a points based system upon chore completion leading up to a weekly allowance amount.  I would also like to implement a third party API to generate random motivational quotes onto the homepage.
 
 ## Project Schedule
 
@@ -93,8 +83,8 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 19| Prompt / Wireframes / Component Hierarchy / README | Incomplete
-|August 20| Project Approval | Incomplete
+|August 19| Prompt / Wireframes / Component Hierarchy / Airtable Setup / README | Complete
+|August 20| Finish README & Get Project Approval | Incomplete
 |August 21| Core Application Structure (add component folders & files) | Incomplete
 |August 22| Pseudocode / import items / GET Request | Incomplete
 |August 23-24| POST/PUT/DELETE via axios  | Incomplete
@@ -121,9 +111,16 @@ This schedule will be used to keep track of your progress throughout the week an
 ## SWOT Analysis
 
 ### Strengths:
+I have good knowledge of the functionality of my website and its design layout. The wireframes, project schedule, and timeframes will assist in me staying on track to the final deadline of presentation day. If I stumble along the way, I will revert back to the labs and previously recorded lectures.
 
-### Weaknesses:
+### Weaknesses: 
+
+Routing the components to implement MVP often confuses me.  Once I get one component working, I believe it should be fairly easy for me to set up the remaining components to their respective functionalities.
 
 ### Opportunities:
 
+I can see how React can be very efficient with the ability to keep your code more organized in creating components for each aspect of a website.  I'm excited to see my website come to life not only with the functionality, but also the styling as well.  It gives me motivation as I already have other website ideas I would like to create using React and CRUD.
+
 ### Threats:
+
+I notice when I hit a roadblock, I spend more time than needed on researching the solution, or trying to work it out myself.  A prior instructor once told me if I find myself still in the roadblock within 20-40 minutes in, then it's time to ask for help.  I can see this being beneficial and a great way to maximize my time management.  As long as I know I tried my best to get out of the roadblock myself, it's okay to ask for help.  Asking questions is how we learn, followed by practice.
