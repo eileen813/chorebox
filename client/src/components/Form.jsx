@@ -1,10 +1,30 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 import { baseURL, config } from "../services"
+import { useParams } from "react-router-dom"
 
-export default function (props) {
+  export default function Form (props) {
   const [name, setName] = useState("")
   const [description, setDescription] = useState("")
+
+  //I now have access to chores from app.js.
+  // In order to pre-populate with chore to edit, need to take chores
+  // state and use find method to find a snack to edit. useParams for this.
+  //const params gives me access to URL parameters.
+    const params = useParams()
+
+  useEffect(() => {
+    if (params.id && props.chores.length > 0) {
+      // gives access to specific snack to edit
+      const choreToEdit = props.chores.find(chore => params.id === chore.id)
+      if (choreToEdit) {
+      // update state with that snack
+        setName(choreToEdit.fields.name)
+        setDescription(choreToEdit.fields.description)
+      }
+    }
+    // when chores state changes in app.js, this useEffect gets triggered by props.chores
+  }, [params.id, props.chores])
 
   const handleSubmit = async (event) => {
     event.preventDefault()

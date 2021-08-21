@@ -13,7 +13,7 @@ const [chores, setChores] = useState([])
   useEffect(() => {
     const fetchChores = async () => {
       const resp = await axios(baseURL, config)
-      console.log(resp.data.records)
+      console.log(resp.data)
       setChores(resp.data.records)
     }
     fetchChores()
@@ -33,6 +33,8 @@ const [chores, setChores] = useState([])
               <article key={index}>
                 <h3>{name}</h3>
                 <p>{description}</p>
+                {/* the link below routes to new page to edit specific chore. */}
+                <Link to={`/edit/${chore.id}`}>Edit Chore!</Link>
               </article>
             )
           })
@@ -41,8 +43,9 @@ const [chores, setChores] = useState([])
       <Route path="/new">
         <Form />
       </Route>
+      {/* need access to State for chores.  Use chores prop from above to Form component. */}
       <Route path="/edit/:id">
-        <h1>Pre-populated chore to edit.</h1>
+        <Form chores={chores}/>
       </Route>
     </>
   );
