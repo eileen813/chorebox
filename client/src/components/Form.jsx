@@ -1,12 +1,21 @@
 import { useState } from "react"
+import axios from "axios"
+import { baseURL, config } from "../services"
 
 export default function (props) {
   const [name, setName] = useState("")
   const [description, setDescription] = useState("")
 
-  const handleSubmit = event => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    // axios post request here:
+    // axios post to create new chore request
+    const newChore = {
+      name,
+      description
+    }
+    // send it as axios post request.  Fields holds an object.
+    await axios.post(baseURL, { fields: newChore }, config)
+    
   }
 
   return (
@@ -16,7 +25,7 @@ export default function (props) {
       <input id="name"
         type="text"
         value={name}
-        onChange={e => setName(e.target.name)}
+        onChange={e => setName(e.target.value)}
       />
       <label htmlFor="description">Description:</label>
       <textarea id="description"
