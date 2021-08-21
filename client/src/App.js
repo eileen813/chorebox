@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import axios from "axios"
 import { Route, Link } from "react-router-dom";
+import Form from './components/Form';
 
 
 export default function App() {
@@ -31,6 +32,7 @@ const [chores, setChores] = useState([])
     </nav>
       <Route path="/" exact>
         {chores.map((chore, index) => {
+          //each snack is displayed from fields object:
             const {name, description} = chore.fields
             return (
               <article key={index}>
@@ -42,7 +44,7 @@ const [chores, setChores] = useState([])
         }
       </Route>
       <Route path="/new">
-        <h1>Create new chore form.</h1>
+        <Form />
       </Route>
       <Route path="/edit/:id">
         <h1>Pre-populated chore to edit.</h1>
