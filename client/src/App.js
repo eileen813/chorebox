@@ -3,6 +3,7 @@ import './App.css';
 import axios from "axios"
 import { Route, Link } from "react-router-dom";
 import Form from './components/Form';
+import { baseURL, config } from './services';
 
 
 export default function App() {
@@ -11,13 +12,7 @@ const [chores, setChores] = useState([])
 
   useEffect(() => {
     const fetchChores = async () => {
-      const resp = await axios(`https://api.airtable.com/v0/appFGm05ROt4K1hdH/Table%201`,
-        {
-          headers: {
-            Authorization: `Bearer keyecAOfQ6CfXYswX`
-          }
-        }
-      )
+      const resp = await axios(baseURL, config)
       console.log(resp.data.records)
       setChores(resp.data.records)
     }
@@ -32,7 +27,7 @@ const [chores, setChores] = useState([])
     </nav>
       <Route path="/" exact>
         {chores.map((chore, index) => {
-          //each snack is displayed from fields object:
+          //each snack is displayed from fields object
             const {name, description} = chore.fields
             return (
               <article key={index}>
