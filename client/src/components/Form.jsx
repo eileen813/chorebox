@@ -15,10 +15,10 @@ import { useParams } from "react-router-dom"
 
   useEffect(() => {
     if (params.id && props.chores.length > 0) {
-      // gives access to specific snack to edit
+      // gives access to specific chore to edit
       const choreToEdit = props.chores.find(chore => params.id === chore.id)
       if (choreToEdit) {
-      // update state with that snack
+      // update state with that chore
         setName(choreToEdit.fields.name)
         setDescription(choreToEdit.fields.description)
       }
@@ -33,9 +33,16 @@ import { useParams } from "react-router-dom"
       name,
       description
     }
-    // send it as axios post request.  Fields holds an object.
-    await axios.post(baseURL, { fields: newChore }, config)
-    
+    // if there's a URL to edit, PUT request here.
+    // Must specify which item you're editing.
+    // Does one thing to edit(put) a chore, and
+    // another to create(post) new chore.
+    if (params.id) {
+      await axios.put(`${baseURL}/${params.id}`, { fields: newChore }, config)
+    } else {
+      // send it as axios post request.  Fields holds an object.
+      await axios.post(baseURL, { fields: newChore }, config)
+    }
   }
 
   return (
