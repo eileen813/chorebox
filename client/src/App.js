@@ -4,6 +4,7 @@ import axios from "axios"
 import { Route, Link } from "react-router-dom";
 import Form from './components/Form';
 import { baseURL, config } from './services';
+import Chore from './components/Chore';
 
 
 export default function App() {
@@ -27,15 +28,9 @@ const [chores, setChores] = useState([])
     </nav>
       <Route path="/" exact>
         {chores.map((chore, index) => {
-          //each snack is displayed from fields object
-            const {name, description} = chore.fields
-            return (
-              <article key={index}>
-                <h3>{name}</h3>
-                <p>{description}</p>
-                {/* the link below routes to new page to edit specific chore. */}
-                <Link to={`/edit/${chore.id}`}>Edit Chore!</Link>
-              </article>
+          return (
+              //create chore prop to have access inside Chore.jsx
+              <Chore key={index} chore={chore} />
             )
           })
         }
