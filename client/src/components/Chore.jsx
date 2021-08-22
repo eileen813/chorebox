@@ -1,14 +1,18 @@
 import axios from "axios"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 import { baseURL, config } from "../services"
 
 export default function Chore(props) {
   //each chore is displayed from fields object.  Using props to access it.
-  const {name, description} = props.chore.fields
+  const { name, description } = props.chore.fields
+
+  
 
     const handleDelete = async () => {
       // Must specify which item you're deleting.
       await axios.delete(`${baseURL}/${props.chore.id}`, config)
+        props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
   }
   
   return (

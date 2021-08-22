@@ -43,6 +43,10 @@ import { useParams } from "react-router-dom"
       // send it as axios post request.  Fields holds an object.
       await axios.post(baseURL, { fields: newChore }, config)
     }
+    // if put or post is used, toggleFetch takes place.
+    props.setToggleFetch(prevToggleFetch => !prevToggleFetch)
+    setName("")
+    setDescription("")
   }
 
   return (
