@@ -6,10 +6,8 @@ import Form from './components/Form';
 import { baseURL, config } from './services';
 import Chore from './components/Chore';
 
-
 export default function App() {
 const [chores, setChores] = useState([])
-
 
   useEffect(() => {
     const fetchChores = async () => {
