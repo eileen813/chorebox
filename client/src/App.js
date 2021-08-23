@@ -5,6 +5,7 @@ import { Route, Link } from "react-router-dom";
 import Form from './components/Form';
 import { baseURL, config } from './services';
 import Chore from './components/Chore';
+import Navbar from './components/Navbar';
 
 export default function App() {
   const [chores, setChores] = useState([])
@@ -21,10 +22,7 @@ export default function App() {
 
   return (
     <>
-      <nav>
-      <Link to="/">Home</Link>
-      <Link to="/new">Add A Chore</Link>
-    </nav>
+      <Navbar />
       <Route path="/" exact>
         {chores.map((chore, index) => {
           return (
