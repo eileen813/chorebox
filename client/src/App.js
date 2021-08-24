@@ -6,6 +6,15 @@ import Form from './components/Form';
 import { baseURL, config } from './services';
 import Chore from './components/Chore';
 import Navbar from './components/Navbar';
+import About from './components/About'
+import './components/Navbar.css'
+import './components/Chore.css';
+import './components/Form.css'
+import Footer from './components/Footer';
+import './components/Footer.css'
+import './components/About.css'
+
+
 
 export default function App() {
   const [chores, setChores] = useState([])
@@ -23,6 +32,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <h1 className="title">ChoreBox</h1>
       <Route path="/" exact>
         {chores.map((chore, index) => {
           return (
@@ -39,6 +49,10 @@ export default function App() {
       <Route path="/edit/:id">
         <Form chores={chores} setToggleFetch={setToggleFetch}/>
       </Route>
+      <Route path="/about">
+        <About />
+      </Route>
+      <Footer />
     </>
   );
 }

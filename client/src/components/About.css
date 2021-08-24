@@ -1,0 +1,8 @@
+.about {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  border: solid;
+  margin: 10px;
+  background-color: #E9B000;
+}

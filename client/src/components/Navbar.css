@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #55b8bc;
+  float: left;
+  top: absolute;
+  width: 100%;
+  padding: 14px 16px;
+}
+
+.navbar a {
+  color: #E24E42;
+  font-size: 17px;
+  padding-right: 30px;
+}
+
+.navbar a:hover {
+  background-color: #E9B000;
+
+}

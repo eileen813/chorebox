@@ -1,0 +1,18 @@
+.footerContainer {
+  display: inline-flex;
+  background-color: #55b8bc;
+  bottom:0;  
+  width:100%;
+  place-content: center;
+  padding: 14px 16px;
+}
+
+.octocat, .LinkedIn {
+  width: 70px;
+  mix-blend-mode: multiply;
+}
+
+.footerContainer, h5 {
+  text-align: center;
+  color: #E24E42;;
+}

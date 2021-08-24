@@ -1,0 +1,19 @@
+.sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50%;
+    margin: auto;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #EB6E80;
+    color: rgb(27, 142, 105);
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptionContainer {
+  background-color: #E9B000;
+}
