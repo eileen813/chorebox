@@ -51,14 +51,14 @@ import { useParams } from "react-router-dom"
 
   return (
     //this is generic form component here:
-    <form className="form" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <label className="nameLabel" htmlFor="name">Chore Name:</label>
       <input id="name"
         type="text"
         value={name}
         onChange={e => setName(e.target.value)}
       />
-      <label htmlFor="description">Description:</label>
+      <label className="descriptionLabel" htmlFor="description">Description:</label>
       <textarea id="description"
         value={description}
         onChange={e => setDescription(e.target.value)}

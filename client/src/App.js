@@ -13,8 +13,7 @@ import './components/Form.css'
 import Footer from './components/Footer';
 import './components/Footer.css'
 import './components/About.css'
-
-
+import Detail from './components/Detail';
 
 export default function App() {
   const [chores, setChores] = useState([])
@@ -22,7 +21,7 @@ export default function App() {
 
   useEffect(() => {
     const fetchChores = async () => {
-      const resp = await axios(baseURL, config)
+      const resp = await axios.get(baseURL, config)
       console.log(resp.data)
       setChores(resp.data.records)
     }
@@ -51,6 +50,9 @@ export default function App() {
       </Route>
       <Route path="/about">
         <About />
+      </Route>
+      <Route path="/detail/:id">
+        <Detail chores={chores} />
       </Route>
       <Footer />
     </>

@@ -13,6 +13,10 @@
 }
 
 .navbar a:hover {
-  background-color: #E9B000;
-
+background-color: #E9B000;
+border-top:2px solid #E24E42;
+border-right:2px solid #FFFFCC;
+border-bottom:2px solid #FFFFCC;
+border-left:2px solid #E24E42;
+padding:1px 6px 0px 4px;
 }

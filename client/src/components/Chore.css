@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 50%;
-    margin: auto;
+    margin: initial;
+    align-self: center;
 }
 
 .nameContainer {
@@ -16,4 +17,8 @@
 
 .descriptionContainer {
   background-color: #E9B000;
+}
+
+.editButton {
+  margin-left: 40px;
 }

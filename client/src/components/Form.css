@@ -1,16 +1,26 @@
-.form {
-  display: inline-flex;
-  justify-content: center;
+form {
+  display: inline-block;
+  align-self: center;
+  text-align: left;
+  border: solid;
+  margin: 25px 50px 50px 25px;
+  padding: 14px;
 }
 
-.nameLabel {
-  border: solid;
+/* .nameLabel, 
+.descriptionLabel {
+  align-self: center;
 }
 
 #name {
   display: flex;
   flex-direction: row;
 }
+
+#direction {
+  display: flex;
+  flex-direction: row;
+} */
 
 button {
   background-color: #E24E42;
