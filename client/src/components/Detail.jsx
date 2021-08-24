@@ -1,9 +1,13 @@
 import axios from "axios"
 import { Link } from "react-router-dom"
 import { baseURL, config } from "../services"
+import { useParams } from "react-router-dom"
 
 export default function Detail(props) {
-  const { description } = props.chore.fields
+  // const { description } = props.chore.fields
+  // const {description} =useParams
+  const params = useParams()
+  const details = props.chores.find(chore => params.id === chore.id)
   
 
     const handleDelete = async () => {
@@ -15,7 +19,7 @@ export default function Detail(props) {
   return (
     <>
       <div className="descriptionContainer">
-        <p>{description}</p>
+        <p>{details.description}</p>
         <button onClick={handleDelete}>Delete Chore</button>
         {/* the link below routes to new page to edit specific chore.
         using props for this. */}
