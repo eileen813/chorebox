@@ -5,12 +5,10 @@ export default function Chore(props) {
   const { name } = props.chore.fields
   
   return (
-    <>
-      <div className="sidebar">
-        <div className="nameContainer">
-        <Link to="/detail"><h3>{name}</h3></Link>
+   
+      <div className="nameContainer">
+      <h3 id={props.chore.id} onClick={props.handleClick}>{name}</h3>
       </div>
-    </div>
-      </>
+   
   )
 } 

@@ -1,24 +1,15 @@
-.sidebar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 50%;
-    margin: initial;
-    align-self: center;
-}
-
 .nameContainer {
     display: flex;
-    flex-direction: row;
     background-color: #EB6E80;
     color: rgb(27, 142, 105);
-    align-items: center;
     justify-content: center;
 }
 
-.descriptionContainer {
+.nameContainer :hover {
   background-color: #E9B000;
-}
-
-.editButton {
-  margin-left: 40px;
+  border-top:2px solid #E24E42;
+  border-right:2px solid #FFFFCC;
+  border-bottom:2px solid #FFFFCC;
+  border-left:2px solid #E24E42;
+  padding:1px 6px 0px 4px;
 }
