@@ -71,15 +71,19 @@ The wireframes below display the homepage with the chore list and description fo
 
 #### MVP 
 
-Be a working, interactive React app, built using create react app.  Have at least six separate, rendered components; App, Chore, Form, NavBar, Sidebar, and About.  The React file structure needs to be organized in an understandable way.  I will ensure all functionality of the React components. Application of Axios needs to take place to obtain data from Airtable, and GET/render that data in components.  I will also use the POST/create Axios request to add a new chore.  The PUT/update Axios request will be implemented for the user to delete a chore.
+- Build a working, interactive React app.
+- Have at least six separate, rendered components; App, Chore, Form, NavBar, Sidebar, and About.
+- Ensure all functionality of the React components. 
+- Application of Axios needs to take place to obtain data from Airtable, and GET/render that data in components.
+- Use the POST/create Axios request to add a new chore.
+- The PUT/update Axios request will be implemented for the user to delete a chore.
 
 #### PostMVP
 
-I would like to include a points based system upon chore completion leading up to a weekly allowance amount.  I would also like to implement a third party API to generate random motivational quotes onto the homepage.
+- Include a points based system upon chore completion leading up to a weekly allowance amount.
+- Implement a third party API to generate random motivational quotes onto the homepage.
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -99,14 +103,14 @@ This schedule will be used to keep track of your progress throughout the week an
 | --- | :---: |  :---: | :---: | :---: |
 | Airtable & New Repo Setup | H | 2 hrs| 2 hrs | 2 hrs |
 | Adding component folders & files / Pseudocode | H | 1 hr| 1 hr | 1 hr |
-| Add Nav., Form, & Search Bar | H | 1 hr| 1 hr | 1 hr |
-| GET/render Airtable data | H | 3 hrs| 3 hrs | 3 hrs |
-| POST/create new data on Airtable | H | 2 hr| 2 hr | 2 hr |
-| POST & DELETE to Airtable | H | 2 hr| 2 hr | 2 min |
-| Adding Flexbox/grid & Media Query | H | 2 hrs| 1 hr | 1 hr |
-| Style with CSS | H | 2 hrs| 2 hrs | 2 hrs |
-| Final Touches/Debug | H | 3.5 hrs| 2 hrs | 2 hrs |
-| Total | H | 18.5 hrs| 19 hrs | 15 hrs |
+| Add Nav., Form, & Search Bar | H | 3 hr| 3 hr | 3 hr |
+| GET/render Airtable data | H | 5 hrs| 5 hrs | 5 hrs |
+| POST/create new data on Airtable | H | 5 hr| 5 hr | 5 hr |
+| POST & DELETE to Airtable | H | 5 hr| 5 hr | 5 min |
+| Adding Flexbox/grid & Media Query | H | 6 hrs| 6 hr | 6 hr |
+| Style with CSS, Styled Components, CSS-in-JS | H | 6 hrs| 6 hrs | 6 hrs |
+| Final Touches/Debug | H | 5 hrs| 5 hrs | 5 hrs |
+| Total | H | 38 hrs| 38 hrs | 38 hrs |
 
 ## SWOT Analysis
 
