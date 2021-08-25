@@ -8,6 +8,10 @@ body,
 
 body {
   text-align: center;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fthumb_back%2Ffw800%2Fback_our%2F20190620%2Fourmid%2Fpngtree-home-cleaning-supplies-elements-blue-background-advertising-design-image_153338.jpg&f=1&nofb=1");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #root {

@@ -52,7 +52,7 @@ export default function Form(props) {
   return (
     //this is generic form component here:
     <form onSubmit={handleSubmit}>
-      <h3>Add your chore below:</h3>
+      <h2>Add your chore below:</h2>
       <div className="input-container">
         <label className="nameLabel" htmlFor="name">
           Chore Name:
