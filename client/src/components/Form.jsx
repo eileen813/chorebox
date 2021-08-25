@@ -56,6 +56,7 @@ export default function Form(props) {
       <div className="input-container">
         <label className="nameLabel" htmlFor="name">
           Chore Name:
+          <br />
         </label>
         <input
           id="name"
@@ -67,6 +68,7 @@ export default function Form(props) {
       <div className="input-container">
         <label className="descriptionLabel" htmlFor="description">
           Description:
+          <br />
         </label>
         <textarea
           id="description"

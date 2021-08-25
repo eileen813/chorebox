@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function Chore(props) {
   //each chore is displayed from fields object.  Using props to access it.
   const { name } = props.chore.fields;

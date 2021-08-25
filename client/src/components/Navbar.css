@@ -1,22 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rampart+One&display=swap");
+
 .navbar {
   background-color: #55b8bc;
   float: left;
-  top: absolute;
   width: 100%;
   padding: 14px 16px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.nav-text {
+  font-size: 50px;
 }
 
 .navbar a {
-  color: #E24E42;
+  color: #e24e42;
   font-size: 17px;
   padding-right: 30px;
 }
 
 .navbar a:hover {
-background-color: #E9B000;
-border-top:2px solid #E24E42;
-border-right:2px solid #FFFFCC;
-border-bottom:2px solid #FFFFCC;
-border-left:2px solid #E24E42;
-padding:1px 6px 0px 4px;
+  background-color: #e9b000;
+  border-top: 2px solid #e24e42;
+  border-right: 2px solid #ffffcc;
+  border-bottom: 2px solid #ffffcc;
+  border-left: 2px solid #e24e42;
+  padding: 1px 6px 0px 4px;
 }

@@ -1,19 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Paytone+One&family=Rampart+One&display=swap");
+
 .footerContainer {
   display: inline-flex;
   background-color: #55b8bc;
-  bottom:0;  
-  width:100%;
+  bottom: 0;
+  width: 100%;
   place-content: center;
   padding: 14px 16px;
   margin-top: 50px;
+  justify-content: space-evenly;
 }
 
-.octocat, .LinkedIn {
-  width: 70px;
+.octocat,
+.LinkedIn {
+  height: 70px;
   mix-blend-mode: multiply;
 }
 
-.footerContainer, h5 {
+.footerContainer,
+h5 {
   text-align: center;
-  color: #E24E42;;
+  color: #e24e42;
+  font-family: "Paytone One", sans-serif;
+  font-size: 17px;
+  text-shadow: 1px 1px 2px rgb(200, 190, 190);
 }

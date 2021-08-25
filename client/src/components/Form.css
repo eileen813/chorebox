@@ -1,36 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Luckiest+Guy&family=Paytone+One&family=Rampart+One&display=swap");
+
 form {
   display: flex;
+  background-color: #e9b000;
   height: 36%;
   justify-content: space-evenly;
   flex-direction: column;
-
-  /* display: inline-block;
-  align-self: center;
-  text-align: left;
-  border: solid;
-  margin: 25px 50px 50px 25px;
-  padding: 14px; */
+  font-family: "Luckiest Guy", cursive;
 }
-
-/* .nameLabel, 
-.descriptionLabel {
-  align-self: center;
-}
-
-#name {
-  display: flex;
-  flex-direction: row;
-}
-
-#direction {
-  display: flex;
-  flex-direction: row;
-} */
 
 button {
-  display: flex;
-  flex-direction: row;
+  display: block;
   background-color: #e24e42;
   color: white;
-  max-width: 50%;
+  margin: 0 auto;
 }

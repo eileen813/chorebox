@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import "./components/Footer.css";
 import "./components/About.css";
 import Detail from "./components/Detail";
+import "./components/Detail.css";
 
 export default function App() {
   const [chores, setChores] = useState([]);
@@ -28,7 +29,7 @@ export default function App() {
       setChores(resp.data.records);
     };
     fetchChores();
-  }, [toggleFetch]);
+  }, [toggleFetch, preview]);
 
   const handleClick = (e) => {
     console.log(e.target.id);
@@ -37,7 +38,7 @@ export default function App() {
     });
     console.log(chorePreview);
     setPreview(chorePreview);
-    setToggleComponent(!toggleComponent)
+    setToggleComponent((prev) => !prev);
   };
 
   return (
@@ -60,7 +61,15 @@ export default function App() {
             })}
           </div>
           <div className="chore-preview">
-            {preview.id && <Detail preview={preview} setToggleFetch={setToggleFetch} setToggleComponent={setToggleComponent} toggleComponent={ toggleComponent}/> }
+            {preview.id && (
+              <Detail
+                preview={preview}
+                setPreview={setPreview}
+                setToggleFetch={setToggleFetch}
+                setToggleComponent={setToggleComponent}
+                toggleComponent={toggleComponent}
+              />
+            )}
             {/* <Detail preview={chore} setToggleFetch={setToggleFetch} /> */}
           </div>
         </div>
