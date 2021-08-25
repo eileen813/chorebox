@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Chau+Philomene+One&family=Fredericka+the+Great&family=Luckiest+Guy&family=Paytone+One&family=Rampart+One&display=swap");
 .about {
   display: inline-flex;
   align-content: center;
   justify-content: center;
-  border: solid;
   margin: 25px 50px 50px 25px;
   padding: 14px;
-  background-color: #E9B000;
+  background-color: #e9b000;
+  font-family: "Chau Philomene One", sans-serif;
+  color: rgb(27, 142, 105);
+  font-size: 30px;
+}
+
+.squidward {
+  margin-right: 25px;
 }

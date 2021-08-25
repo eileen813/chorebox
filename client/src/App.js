@@ -44,6 +44,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+
       <h1 className="title">ChoreBox</h1>
       <Route path="/" exact>
         <div className="home-container">

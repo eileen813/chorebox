@@ -2,7 +2,7 @@
 
 .footerContainer {
   display: inline-flex;
-  background-color: #55b8bc;
+  background-color: #eb6e80;
   bottom: 0;
   width: 100%;
   place-content: center;
@@ -20,7 +20,7 @@
 .footerContainer,
 h5 {
   text-align: center;
-  color: #e24e42;
+  color: rgb(27, 142, 105);
   font-family: "Paytone One", sans-serif;
   font-size: 17px;
   text-shadow: 1px 1px 2px rgb(200, 190, 190);

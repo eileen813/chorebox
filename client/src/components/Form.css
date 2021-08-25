@@ -4,7 +4,7 @@ form {
   display: flex;
   background-color: #e9b000;
   height: 36%;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
   font-family: "Luckiest Guy", cursive;
 }
@@ -12,8 +12,18 @@ form {
 h2 {
   color: rgb(27, 142, 105);
   text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
+  font-size: 30px;
 }
 
+input[type="text"] {
+  height: 70%;
+  width: 20%;
+}
+
+textarea {
+  height: 100%;
+  width: 75%;
+}
 button {
   display: block;
   background-color: #e24e42;
