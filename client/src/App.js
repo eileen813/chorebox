@@ -18,7 +18,8 @@ import Detail from "./components/Detail";
 export default function App() {
   const [chores, setChores] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-  const [preview, setPreview] = useState({})
+  const [preview, setPreview] = useState({});
+  const [toggleComponent, setToggleComponent] = useState(false);
 
   useEffect(() => {
     const fetchChores = async () => {
@@ -30,20 +31,22 @@ export default function App() {
   }, [toggleFetch]);
 
   const handleClick = (e) => {
-    console.log(e.target.id)
+    console.log(e.target.id);
     const chorePreview = chores.find((chore) => {
-      return chore.id === e.target.id
-    })
-    setPreview(chorePreview)
-  }
+      return chore.id === e.target.id;
+    });
+    console.log(chorePreview);
+    setPreview(chorePreview);
+    setToggleComponent(!toggleComponent)
+  };
 
   return (
     <>
       <Navbar />
       <h1 className="title">ChoreBox</h1>
       <Route path="/" exact>
-        <div>
-          <div>
+        <div className="home-container">
+          <div className="chore-name">
             {chores.map((chore, index) => {
               return (
                 //create chore prop to have access inside Chore.jsx
@@ -56,8 +59,9 @@ export default function App() {
               );
             })}
           </div>
-          <div>
-            {preview.id && <Detail preview={preview} /> }
+          <div className="chore-preview">
+            {preview.id && <Detail preview={preview} setToggleFetch={setToggleFetch} setToggleComponent={setToggleComponent} toggleComponent={ toggleComponent}/> }
+            {/* <Detail preview={chore} setToggleFetch={setToggleFetch} /> */}
           </div>
         </div>
       </Route>
@@ -70,9 +74,6 @@ export default function App() {
       </Route>
       <Route path="/about">
         <About />
-      </Route>
-      <Route path="/detail/description/:id">
-        <Detail chores={chores} />
       </Route>
       <Footer />
     </>
