@@ -4,29 +4,53 @@ form {
   display: flex;
   background-color: #e9b000;
   height: 36%;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   font-family: "Luckiest Guy", cursive;
 }
 
 h2 {
   color: rgb(27, 142, 105);
-  text-shadow: 1px 1px 2px red, 0 0 1em black, 0 0 0.2em black;
+  text-shadow: 1px 1px 2px red, 0 0 1em white, 0 0 0.2em white;
   font-size: 30px;
 }
 
 input[type="text"] {
   height: 70%;
   width: 20%;
+  color: rgb(27, 142, 105);
+  font-weight: bold;
 }
 
 textarea {
   height: 100%;
   width: 75%;
+  color: rgb(27, 142, 105);
+  font-weight: bold;
 }
 button {
   display: block;
   background-color: #e24e42;
   color: white;
   margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: "Luckiest Guy", cursive;
+  padding: 14px;
+}
+
+@media all and (min-width: 375px) and (max-width: 812px) {
+  form {
+    max-height: 100%;
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+  button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .input-container {
+    font-size: 15px;
+    padding: 10px;
+  }
 }

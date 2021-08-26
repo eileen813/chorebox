@@ -5,13 +5,30 @@
   display: inline-block;
   background-color: #e24e42;
   color: whitesmoke;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  margin: 50px;
   padding: 10px 10px;
+  font-size: 20px;
+  font-family: "Acme", sans-serif;
 }
 
 h1 {
   font-family: "Acme", sans-serif;
   color: rgb(27, 142, 105);
   padding: 20px 20px;
+}
+
+@media all and (min-width: 375px) and (max-width: 812px) {
+  .deleteButton {
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .editButton {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 5px;
+  }
 }

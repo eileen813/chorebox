@@ -22,11 +22,15 @@ export default function Detail(props) {
         <h1>{description}</h1>
         <button className="deleteButton" onClick={handleDelete}>
           Delete Chore
+          <br />✅
         </button>
         {/* the link below routes to new page to edit specific chore.
               using props for this. */}
         <Link to={`/edit/${props.preview.id}`}>
-          <button className="editButton">Edit Chore</button>
+          <button className="editButton">
+            Edit Chore
+            <br /> 📝
+          </button>
         </Link>
       </>
       {/* ) : (

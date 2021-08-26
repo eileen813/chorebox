@@ -9,13 +9,9 @@
   color: rgb(27, 142, 105);
 }
 
-.nav-text {
-  font-size: 50px;
-}
-
 .navbar a {
   color: #e24e42;
-  font-size: 17px;
+  font-size: 25px;
   padding-right: 30px;
 }
 
@@ -26,4 +22,10 @@
   border-bottom: 2px solid #ffffcc;
   border-left: 2px solid #e24e42;
   padding: 1px 6px 0px 4px;
+}
+
+@media all and (min-width: 375px) and (max-width: 812px) {
+  .navbar a {
+    font-size: 15px;
+  }
 }
