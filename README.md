@@ -88,14 +88,14 @@ The wireframes below display the homepage with the chore list and description fo
 |  Day | Deliverable | Status
 |---|---| ---|
 |August 19| Prompt / Wireframes / Component Hierarchy / Airtable Setup / README | Complete
-|August 20| Finish README & Get Project Approval | Incomplete
-|August 21| Core Application Structure (add component folders & files) | Incomplete
-|August 22| Pseudocode / import items / GET Request | Incomplete
-|August 23-24| POST/PUT/DELETE via axios  | Incomplete
-|August 24| Reach MVP by days end | Incomplete
-|August 25| Styling; flex/grid, media queries | Incomplete
-|August 26| Post MVP | Incomplete
-|August 27| Presentations | Incomplete
+|August 20| Finish README & Get Project Approval | Complete
+|August 21| Core Application Structure (add component folders & files) | Complete
+|August 22| Pseudocode / import items / GET Request | Complete
+|August 23-24| POST/PUT/DELETE via axios  | Complete
+|August 24| Reach MVP by days end | Complete
+|August 25| Styling; flex/grid, media queries | Complete
+|August 26| Post MVP | Complete
+|August 27| Presentations | Complete
 
 ## Timeframes
 
