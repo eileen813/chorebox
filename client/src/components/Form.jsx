@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 export default function Form(props) {
   const [name, setName] = useState("");
@@ -12,6 +12,7 @@ export default function Form(props) {
   // state and use find method to find a snack to edit. useParams for this.
   //const params gives me access to URL parameters.
   const params = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     if (params.id && props.chores.length > 0) {
@@ -39,14 +40,17 @@ export default function Form(props) {
     // another to create(post) new chore.
     if (params.id) {
       await axios.put(`${baseURL}/${params.id}`, { fields: newChore }, config);
+      console.log(props.chores.find((chore) => params.id === chore.id));
+      props.setPreview(props.chores.find((chore) => params.id === chore.id));
     } else {
       // send it as axios post request.  Fields holds an object.
       await axios.post(baseURL, { fields: newChore }, config);
     }
     // if put or post is used, toggleFetch takes place.
     props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
-    setName("");
-    setDescription("");
+    // setName("");
+    // setDescription("");
+    history.push("/");
   };
 
   return (

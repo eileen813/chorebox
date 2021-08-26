@@ -71,7 +71,6 @@ export default function App() {
                 toggleComponent={toggleComponent}
               />
             )}
-            {/* <Detail preview={chore} setToggleFetch={setToggleFetch} /> */}
           </div>
         </div>
       </Route>
@@ -80,7 +79,11 @@ export default function App() {
       </Route>
       {/* need access to State for chores.  Use chores prop from above to Form component. */}
       <Route path="/edit/:id">
-        <Form chores={chores} setToggleFetch={setToggleFetch} />
+        <Form
+          chores={chores}
+          setPreview={setPreview}
+          setToggleFetch={setToggleFetch}
+        />
       </Route>
       <Route path="/about">
         <About />
