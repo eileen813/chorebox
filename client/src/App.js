@@ -24,7 +24,6 @@ export default function App() {
   useEffect(() => {
     const fetchChores = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data);
       setChores(resp.data.records);
     };
     fetchChores();
@@ -35,7 +34,6 @@ export default function App() {
     const chorePreview = chores.find((chore) => {
       return chore.id === e.target.id;
     });
-    console.log(chorePreview);
     setPreview(chorePreview);
     setToggleComponent((prev) => !prev);
   };
